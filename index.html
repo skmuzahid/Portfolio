@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shaik Muzahid — Big Data Engineer. PySpark, Azure Databricks, RBI SDMX, Cloud Pipelines.">
+
+  <title>Shaik Muzahid — Data Engineer</title>
+
+  <!-- Animated SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor-dot"  id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Global particle canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Progress bar -->
+  <div id="progress-bar"></div>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">
+      <div class="nav-logo-pipe">
+        <span></span><span></span><span></span>
+      </div>
+      data://muzahid
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#home"    class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#journey">Journey</a></li>
+    </ul>
+
+    <div style="display:flex;gap:1rem;align-items:center;">
+      <a href="#contact" class="nav-resume">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="home">
+    <div class="hero-content">
+
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-dot"></div>
+        Available for Opportunities · Big Data · Cloud · 3+ Years
+      </div>
+
+      <h1 class="hero-name">
+        <span class="n1">Shaik</span>
+        <span class="n2" data-text="Muzahid">Muzahid</span>
+      </h1>
+
+      <div class="hero-role-wrap">
+        <span class="hero-role-prefix">→</span>
+        <span id="hero-typewriter"></span><span class="cursor-blink"></span>
+      </div>
+
+      <p class="hero-tagline">
+        I design data systems that move from raw ingestion to business intelligence — fast, reliable, and scalable.
+      </p>
+
+    </div>
+
+    <!-- Rotating Geometric Object -->
+    <div class="hero-geo-wrap">
+      <canvas id="geo-canvas"></canvas>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS BAR
+       ============================================================ -->
+  <div id="stats-bar">
+    <div class="stats-track">
+      <div class="stat-item reveal">
+        <span class="stat-num" data-target="85" data-suffix="%">0%</span>
+        <div class="stat-label">Process Cycle<br>Time Reduced</div>
+      </div>
+      <div class="stat-item reveal reveal-d1">
+        <span class="stat-num" data-target="63" data-suffix="%">0%</span>
+        <div class="stat-label">Pipeline SLA<br>Reduction</div>
+      </div>
+      <div class="stat-item reveal reveal-d2">
+        <span class="stat-num" data-target="200" data-suffix="%">0%</span>
+        <div class="stat-label">Deployment<br>Capacity Increase</div>
+      </div>
+      <div class="stat-item reveal reveal-d3">
+        <span class="stat-num" data-target="30">0</span>
+        <div class="stat-label">CodeChef Global Rank<br>/ 7,000+ Participants</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section id="about">
+    <div class="section-inner">
+
+      <div class="about-layout">
+
+        <!-- Left: Story -->
+        <div class="about-body">
+          <div class="eyebrow reveal">About Me</div>
+          <h2 class="section-title reveal reveal-d1">
+            I didn't choose<br><em>Big Data.</em><br>Big Data chose me.
+          </h2>
+          <br>
+          <div class="reveal reveal-d2">
+            <p>
+              I'm a Big Data Engineer with <strong>3+ years</strong> turning chaotic, multi-source
+              data into clean, high-performance pipelines. My engineering philosophy is simple:
+              every byte of data has a story — my job is to build the infrastructure that lets
+              that story be told, at scale, without error.
+            </p>
+            <p>
+              My origin story is unusual. I first encountered Big Data inside the walls of India's
+              central bank — the <em>Reserve Bank of India</em>. The project demanded strict
+              on-premise infrastructure (the data couldn't leave the vault), and it was on
+              <em>Hadoop</em> that I fell in love with distributed systems.
+            </p>
+            <p>
+              I was a <em>core engineer on</em> an end-to-end <em>SDMX-compliant ETL system</em> that replaced the
+              RBI's manual Excel/XBRL workflows — connecting India's entire regulated banking
+              sector to the IMF, WTO, and BIS in real-time. That project taught me that data
+              engineering isn't just about moving bytes — it's about enabling
+              <strong>institutional trust at a global scale</strong>.
+            </p>
+            <!-- <p>
+              Today at <em>Xome</em>, the domain changed from banking to real estate, but the 
+              engineering discipline didn't. I'm a <em>core engineer on</em> a full cloud modernisation — 
+              migrating from on-premise Actian workflows to Azure Databricks, rearchitecting Pandas to
+              distributed Spark, and shipping deployments 3× faster. The tools changed.
+              The obsession didn't.
+            </p> -->
+            <p>
+              Today at <em>Xome</em>, the domain changed from banking to real estate, but the engineering discipline didn't. I work on large-scale data platforms where parallel data workflows operate across <em>distributed cloud processing</em> and established transformation frameworks, ensuring systems remain stable, observable, and ready to evolve — the tools changed, the obsession didn't.
+            </p>
+          </div>
+
+          <div class="about-origin reveal reveal-d3">
+            <p>"The RBI vault had no internet. No cloud. No comfort zone. That's where I built my foundations — and where I found my calling inside a Hadoop cluster."</p>
+          </div>
+        </div>
+
+        <!-- Right: Terminal + Achievements -->
+        <div>
+          <div class="terminal reveal reveal-d2">
+            <div class="terminal-bar">
+              <div class="t-dot t-dot-r"></div>
+              <div class="t-dot t-dot-y"></div>
+              <div class="t-dot t-dot-g"></div>
+              <span class="t-filename">muzahid@dataeng ~ profile.json</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <!-- Typed content injected by terminal-typer.js -->
+            </div>
+          </div>
+
+          <div class="achievements">
+            <div class="ach-card reveal reveal-d3" data-hover>
+              <div class="ach-icon">⚡</div>
+              <div class="ach-title">CodeChef Global #30</div>
+              <div class="ach-desc">Top 30 of 7,000+ participants in competitive programming</div>
+            </div>
+            <div class="ach-card reveal reveal-d4" data-hover>
+              <div class="ach-icon">🏦</div>
+              <div class="ach-title">RBI × SDMX Pioneer</div>
+              <div class="ach-desc">Built India's first SDMX ETL regulatory data exchange system</div>
+            </div>
+            <div class="ach-card reveal reveal-d3" data-hover>
+              <div class="ach-icon">⚙️</div>
+              <div class="ach-title">ETL Performance Optimizer</div>
+              <div class="ach-desc">Cut processing time 63% through distributed architecture</div>
+            </div>
+            <div class="ach-card reveal reveal-d4" data-hover>
+              <div class="ach-icon">🏆</div>
+              <div class="ach-title">High-Scale Pipeline Engineering</div>
+              <div class="ach-desc">Delivered high-throughput pipelines ensuring uninterrupted production environment.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS — CIRCUIT BOARD
+       ============================================================ -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="skills-layout">
+
+        <!-- Left: Intro -->
+        <div class="skills-intro">
+          <div class="eyebrow reveal">Skills</div>
+          <h2 class="section-title reveal reveal-d1">
+            An interactive<br><em>circuit board</em><br>of expertise.
+          </h2>
+          <p class="reveal reveal-d2">
+            The tools that built billions of records. Select a pipeline to trace its path — then hover any node to read its role.
+          </p>
+
+          <!-- Pipeline Dropdown -->
+          <div class="pipeline-select-wrapper reveal reveal-d3">
+            <label class="pipeline-select-label" for="pipeline-select">⬡ Active Pipeline</label>
+            <div class="pipeline-select-container">
+              <select id="pipeline-select" class="pipeline-select">
+                <option value="xbrl">XBRL → SDMX</option>
+                <option value="reso">RESO Lakehouse</option>
+                <option value="rets">RETS Legacy XML</option>
+              </select>
+              <span class="pipeline-select-arrow">▼</span>
+            </div>
+          </div>
+
+          <div class="hint reveal reveal-d4">
+            ⬡ Pipeline glows · Hover nodes · Story appears below
+          </div>
+
+          <!-- Skill info panel -->
+          <div class="skill-info-panel" id="skill-info-panel">
+            <div class="sip-name" id="sip-name">Hover a skill</div>
+            <div class="sip-cat"  id="sip-cat">to see details</div>
+            <div class="sip-desc" id="sip-desc"></div>
+          </div>
+        </div>
+
+        <!-- Right: Circuit canvas -->
+        <div class="reveal reveal-d2">
+
+          <canvas id="circuit-canvas"></canvas>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       JOURNEY — PIPELINE DIAGRAM
+       ============================================================ -->
+  <section id="journey">
+    <div class="section-inner">
+
+      <div class="journey-intro">
+        <div class="eyebrow reveal">Journey</div>
+        <h2 class="section-title reveal reveal-d1">
+          A growth curve<br>of a <em>career.</em>
+        </h2>
+        <p class="reveal reveal-d2">
+          Four eras. One continuous climb. Hover any dot on the curve to read
+          the full story behind each milestone — from algorithmic obsessions
+          in college to engineering data platforms at scale.
+        </p>
+      </div>
+
+      <!-- Growth Curve Graph -->
+      <div class="growth-graph-wrapper reveal reveal-d2">
+        <div class="growth-graph-container" id="growth-graph">
+          <svg id="growth-svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"></svg>
+
+          <!-- Era Tooltip Cards -->
+
+          <!-- Card 0: College Origin -->
+          <div class="gc-tooltip" id="gc-tooltip-0" data-dot="0">
+            <div class="gc-tooltip-inner">
+              <div class="sp-era">Era 0 · Origin</div>
+              <div class="sp-company">NBKRIST · 2018–2022</div>
+              <div class="sp-title">Where it all began.</div>
+              <p class="sp-body">
+                Bachelor of Technology in Computer Science at NBKR Institute of Science and Technology,
+                graduating with a <strong style="color:var(--amber)">CGPA of 8.11</strong>.
+                Experimented across ML and Full Stack before finding my calling in data.
+                Competitive programming became an obsession — earning a
+                <strong style="color:var(--amber)">global rank of #30</strong> out of 7,000+
+                participants on CodeChef. The algorithmic mindset I built here would define every
+                pipeline I'd engineer later: think at scale, optimize relentlessly.
+              </p>
+              <!-- <div class="sp-tags">
+                <span class="sp-tag">B.Tech CSE</span>
+                <span class="sp-tag">CGPA 8.11</span>
+                <span class="sp-tag">CodeChef #30</span>
+                <span class="sp-tag">ML · Web Dev</span>
+                <span class="sp-tag">Algorithms</span>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Card 1: TCS × RBI -->
+          <div class="gc-tooltip" id="gc-tooltip-1" data-dot="1">
+            <div class="gc-tooltip-inner">
+              <div class="sp-era">Era 1 · On-Premise Vault (Completed)</div>
+              <div class="sp-company">TCS × RBI · Aug 2022 – Feb 2024</div>
+              <div class="sp-title">CIMS <br> (Centralised Information Management System)</div>
+              <!-- <p class="sp-body">
+                SDMX wasn't just a standard — it was India's bridge to the global financial system.
+                As a <strong style="color:var(--amber)">core engineer on</strong> this system, I built
+                an end-to-end metadata-driven <strong style="color:var(--amber)">SDMX-compliant PySpark ETL</strong>
+                on <strong style="color:var(--amber)">on-premise Hadoop</strong> infrastructure —
+                because the data couldn't leave the vault. The mission: replace manual Excel/XBRL
+                workflows with automated pipelines connecting India's entire regulated banking sector
+                to the IMF, WTO, and BIS in real-time.
+              </p> -->
+              <p class="sp-body">
+                Worked on SDMX-compliant financial data exchange systems within a regulated banking environment, helping transform manual reporting workflows into automated pipelines aligned with international standards. The platform enabled structured data delivery to global institutions including the <strong style="color:var(--amber)"> IMF, WTO, and BIS</strong> while maintaining strict engineering discipline across a highly regulated domain.
+              </p>
+
+              <div class="sp-metrics">
+                <div class="sp-metric">
+                  <div class="sp-metric-bar"><div class="sp-metric-fill" data-w="85%"></div></div>
+                  <div class="sp-metric-label"><span>85%</span> cycle time cut</div>
+                </div>
+                <div class="sp-metric">
+                  <div class="sp-metric-bar"><div class="sp-metric-fill" data-w="100%"></div></div>
+                  <div class="sp-metric-label"><span>Zero</span> manual Excel ops</div>
+                </div>
+                <div class="sp-metric">
+                  <div class="sp-metric-bar"><div class="sp-metric-fill" data-w="90%"></div></div>
+                  <div class="sp-metric-label"><span>3</span> global bodies connected</div>
+                </div>
+              </div>
+              <!-- <div class="sp-tags" style="margin-top:1rem">
+                <span class="sp-tag">XBRL → SDMX</span>
+                <span class="sp-tag">On-Premise Hadoop</span>
+                <span class="sp-tag">Banking Data</span>
+                <span class="sp-tag">IMF · WTO · BIS</span>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Card 2: Xome -->
+          <div class="gc-tooltip" id="gc-tooltip-2" data-dot="2">
+            <div class="gc-tooltip-inner">
+              <div class="sp-status"><div class="sp-status-dot"></div> Currently Active</div>
+              <div class="sp-era">Era 2 · Cloud Native</div>
+              <div class="sp-company">Xome, India · Feb 2024 – Present</div>
+              <div class="sp-title">Unified Property<br>Data Platform.</div>
+              <!-- <p class="sp-body">
+                The domain changed from banking to real estate, but the engineering discipline didn't.
+                Migrating legacy on-premise Actian XML workflows to
+                <strong style="color:var(--amber)">Azure Databricks</strong>, rearchitecting
+                single-node Pandas to distributed <strong style="color:var(--amber)">PySpark DataFrames</strong>,
+                and building reusable frameworks that eliminated complex SQL transformations.
+                63% SLA reduction, 60-70% performance gains, 4× deployment velocity.
+              </p> -->
+              <p class="sp-body">
+                Transitioned from regulated banking systems into large-scale real-estate data platforms, modernizing parallel data workflows while preserving engineering discipline across domains. My role focuses on <strong style="color:var(--amber)">stabilizing high-throughput pipelines</strong>, scaling distributed processing, and maintaining reliable data foundations that support business intelligence and machine learning.
+              </p>
+              <div class="sp-metrics">
+                <div class="sp-metric">
+                  <div class="sp-metric-bar"><div class="sp-metric-fill" data-w="63%"></div></div>
+                  <div class="sp-metric-label"><span>63%</span> SLA reduction</div>
+                </div>
+                <div class="sp-metric">
+                  <div class="sp-metric-bar"><div class="sp-metric-fill" data-w="70%"></div></div>
+                  <div class="sp-metric-label"><span>60-70%</span> perf gain</div>
+                </div>
+                <div class="sp-metric">
+                  <div class="sp-metric-bar"><div class="sp-metric-fill" data-w="100%"></div></div>
+                  <div class="sp-metric-label"><span>3×</span> deploy velocity</div>
+                </div>
+              </div>
+              <!-- <div class="sp-tags" style="margin-top:1rem">
+                <span class="sp-tag">Azure Databricks</span>
+                <span class="sp-tag">Pandas→Spark</span>
+                <span class="sp-tag">ADF</span>
+                <span class="sp-tag">Power BI</span>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Card 3: Present/Future -->
+          <div class="gc-tooltip" id="gc-tooltip-3" data-dot="3">
+            <div class="gc-tooltip-inner">
+              <div class="sp-era">Now · Building What's Next</div>
+              <div class="sp-company">Present Day · 2026</div>
+              <div class="sp-title">The journey<br>continues.</div>
+              <p class="sp-body">
+                From Hadoop vaults to Azure clouds.
+                The tools evolved, but the obsession stayed constant: building data systems that
+                don't break trust. Currently learning <strong style="color:var(--amber)">MongoDB</strong>
+                for the next phase — API-driven data delivery with on-demand schema mapping and
+                real-time transformations. The pipeline never stops flowing.
+              </p>
+              <!-- <div class="sp-tags">
+                <span class="sp-tag">MongoDB (Learning)</span>
+                <span class="sp-tag">API Architecture</span>
+                <span class="sp-tag">Real-time ETL</span>
+                <span class="sp-tag">Next-Gen Pipelines</span>
+              </div> -->
+            </div>
+          </div>
+
+        </div><!-- /.growth-graph-container -->
+      </div><!-- /.growth-graph-wrapper -->
+
+      <!-- REMOVED: Old story-panels (replaced by tooltip cards above) -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="eyebrow reveal">Contact</div>
+      <h2 class="section-title reveal reveal-d1" style="text-align:center;">
+        Let's build<br><em>something</em><br>together.
+      </h2>
+      <p class="contact-lede reveal reveal-d2" style="text-align:center; max-width:600px; margin:2rem auto 4rem;">
+        Whether you're hiring, collaborating, or want to talk data architecture —
+        I'm always open to a good conversation.
+      </p>
+
+      <!-- Centered CTA -->
+      <div class="contact-cta reveal reveal-d3" style="text-align:center;">
+        <button class="contact-cta-btn" id="contact-cta-btn" data-hover>Get in Touch →</button>
+      </div>
+
+      <!-- Expandable contact options -->
+      <div class="contact-options" id="contact-options">
+        <a href="mailto:skmuzahid4@gmail.com" class="contact-option" data-hover>
+          <div class="co-icon">✉</div>
+          <div class="co-label">Email</div>
+          <div class="co-value">skmuzahid4@gmail.com</div>
+        </a>
+        <a href="https://www.linkedin.com/in/shaikmuzahid07" target="_blank" rel="noopener" class="contact-option" data-hover>
+          <div class="co-icon">in</div>
+          <div class="co-label">LinkedIn</div>
+          <div class="co-value">linkedin.com/in/shaikmuzahid07</div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-center"> © 2026 Shaik Muzahid — No templates. No frameworks. Pure HTML, CSS & JavaScript.</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/viewport-guard.js"></script>
+  <script src="assets/js/activity.js"></script>
+  <script src="assets/js/terminal-typer.js"></script>
+</body>
+</html>
